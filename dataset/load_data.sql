@@ -1,0 +1,34 @@
+LOAD DATA INFILE "/var/lib/mysql-files/games.csv"
+INTO TABLE Games
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+
+LOAD DATA INFILE "/var/lib/mysql-files/games_details.csv"
+INTO TABLE GamesDetail
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+
+LOAD DATA INFILE "/var/lib/mysql-files/players.csv"
+INTO TABLE Players
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+
+LOAD DATA INFILE "/var/lib/mysql-files/ranking.csv"
+INTO TABLE Ranking
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+
+LOAD DATA INFILE "/var/lib/mysql-files/teams.csv"
+INTO TABLE Teams
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
